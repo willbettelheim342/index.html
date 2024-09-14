@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Media Display</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { display: flex; flex-wrap: wrap; gap: 10px; }
+        .media { width: calc(50% - 20px); box-sizing: border-box; }
+        iframe, video { width: 100%; height: 315px; border: none; }
+        @media (max-width: 600px) {
+            .media { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Mixed Media Display</h1>
+    <div class="container">
+        <!-- YouTube Video 1 -->
+        <div class="media">
+            <h2>YouTube Video 1</h2>
+            <iframe src="https://www.youtube.com/embed/EPKWu223XEg" allowfullscreen></iframe>
+        </div>
+
+        <!-- YouTube Video 2 -->
+        <div class="media">
+            <h2>YouTube Video 2</h2>
+            <iframe src="https://www.youtube.com/embed/ucNXqemgfJ8" allowfullscreen></iframe>
+        </div>
+
+        <!-- Camera Feed 1 -->
+        <div class="media">
+            <h2>Camera Feed 1</h2>
+            <video src="https://www.webcamtaxi.com/en/canada/ontario/wasaga-beach-strip-cam.html" controls autoplay></video>
+        </div>
+
+        <!-- Camera Feed 2 -->
+        <div class="media">
+            <h2>Camera Feed 2</h2>
+            <video src="https://www.webcamtaxi.com/en/canada/ontario/wasaga-beach-cam.html" controls autoplay></video>
+        </div>
+    </div>
+</body>
+</html>
